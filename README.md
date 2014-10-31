@@ -4,7 +4,7 @@ Simple Javascript Testing
 Simple javascript testing for rails templates with phantomjs.
 
 This library adds the method call_template_with_js to your tests, if you include SimpleJavascriptTesting.
-This method builds the template you specify (ie users/index) and runs the javascript test file (test/javascript/users/index.js) against it. 
+This method builds the template you specify (ie users/index) and runs the javascript test file (test/javascript/users/index.js) against it. It stubs out any AJAX calls. 
 
 example ruby test test/phantomjs/template_test.rb:
 ```ruby
@@ -44,6 +44,8 @@ simple.runTest("test file", function(page) {
 })
 
 ```
+triggerRequest will manually trigger the callback for an AJAX request with the response you specify.
+page is the phantomjs object
 
 Install
 ====
