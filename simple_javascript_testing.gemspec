@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'simple_javascript_testing'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2014-10-31'
   s.summary     = "Simple Javascript Testing"
   s.description = "simple javascript testing for rails with phantomjs"
@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency('rails', '>= 3.0.7')
+  s.add_dependency('render_anywhere')
 end
