@@ -1,4 +1,5 @@
 require 'fileutils'
+require 'mkmf'
 require 'render_anywhere'
 
 class AnyClass
@@ -47,6 +48,11 @@ module SimpleJavascriptTesting
     File.write("test/html/#{template}.html", html)
     thing = "#{File.expand_path('html', 'test')}/#{template}"
     thing2 = "#{File.expand_path('javascript', 'test')}/#{template}"
-    system "phantomjs #{thing2}.js #{thing}.html"
+    binary = if find_executable 'phantomjs'
+      "phantomjs"
+    else
+      "node_modules/simple_javascript_testing/node_modules/phantomjs/lib/phantom/bin/phantomjs"
+    end
+    system "#{binary} #{thing2}.js #{thing}.html"
   end
 end
