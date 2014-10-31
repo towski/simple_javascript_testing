@@ -1,4 +1,4 @@
-simple_javascript_testing
+Simple Javascript Testing
 =========================
 
 Simple javascript testing for rails templates with phantomjs.
@@ -6,7 +6,9 @@ Simple javascript testing for rails templates with phantomjs.
 To run, install the gem and the npm module into your project
 
 `gem install simple_javascript_testing`
+
 `npm install simple_javascript_testing`
+
 and add simple_javascript_testing to your Gemfile
 
 Then you can use the method call_template_with_js in your tests, if you include SimpleJavascriptTesting.
