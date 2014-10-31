@@ -28,7 +28,8 @@ SharedTestRoutes = ActionDispatch::Routing::RouteSet.new
 end
 
 class SimpleJavascriptTestingTest < Minitest::Test
-  def test_template_with_js
-    SimpleJavascriptTesting.test_template_with_js "users/index"
+  include SimpleJavascriptTesting
+  def test_call_template_with_js
+    call_template_with_js "users/index"
   end
 end

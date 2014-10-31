@@ -34,7 +34,7 @@ class AnyClass
 end
 
 module SimpleJavascriptTesting
-  def self.test_template_with_js(template, &block)
+  def call_template_with_js(template, &block)
     data = AnyClass.new
     if block_given?
       yield data
