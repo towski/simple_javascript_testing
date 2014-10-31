@@ -16,7 +16,7 @@ Then you can use the test helper call_template_with_js in your tests, if you inc
 This method builds the template you specify (ie users/index) and runs the javascript test file (test/javascript/users/index.js) against it. 
 
 example ruby test test/phantomjs/template_test.rb:
-ruby```
+```ruby
 
 require 'test_helper'
 require 'simple_javascript_testing'
@@ -41,7 +41,7 @@ end
 ```
 
 and example js test file test/javascript/users/index.js:
-js```
+```js
 var simple = require('simple_javascript_testing')
 
 simple.runTest("test file", function(page) {
