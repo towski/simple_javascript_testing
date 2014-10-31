@@ -1,0 +1,25 @@
+{
+  "name": "simple_javascript_testing",
+  "version": "0.0.1",
+  "description": "simple javascript testing for rails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/towski/simple_javascript_testing.git"
+  },
+  "keywords": [
+    "simple",
+    "javascript",
+    "testing",
+    "rails"
+  ],
+  "author": "towski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/towski/simple_javascript_testing/issues"
+  },
+  "homepage": "https://github.com/towski/simple_javascript_testing"
+}
