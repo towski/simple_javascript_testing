@@ -76,6 +76,9 @@ module SimpleJavascriptTesting
     else
       "node_modules/simple_javascript_testing/node_modules/phantomjs/lib/phantom/bin/phantomjs"
     end
-    system "#{binary} #{thing2}.js #{thing}.html"
+    result = system "#{binary} #{thing2}.js #{thing}.html"
+    if !result
+      raise "Javascript test failed"
+    end
   end
 end

@@ -40,6 +40,7 @@ var testObject = {
   assert_equal: function(a, b){
     if (a != b){
       console.log("assertion failed:", a, "not equal to", b)
+      phantom.exit(-1)
     }
   }
 }
@@ -48,7 +49,7 @@ exports.runTest = function(name, test){
   page.open("file:///" + args[1], function(status){
     try{
       test.bind(testObject)(page)
-      console.log("test succeeded: " + name)
+      //console.log("test succeeded: " + name)
     } catch(e){
       console.log(e.stack)
       console.log("test failed: " + name)
