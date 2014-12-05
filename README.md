@@ -56,3 +56,9 @@ To run, install the gem and the npm module into your project
 `npm install simple_javascript_testing`
 
 and add simple_javascript_testing to your Gemfile
+
+
+To run the tests:
+
+npm install --force simple_javascript_testing
+ruby test/simple_javascript_testing_test.rb

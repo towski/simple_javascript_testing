@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    simple_javascript_testing (0.0.1)
+    simple_javascript_testing (0.0.4)
       rails (>= 3.0.7)
+      render_anywhere
 
 GEM
   remote: https://rubygems.org/

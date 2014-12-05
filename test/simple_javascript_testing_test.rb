@@ -30,6 +30,6 @@ end
 class SimpleJavascriptTestingTest < Minitest::Test
   include SimpleJavascriptTesting
   def test_call_template_with_js
-    call_template_with_js "users/index"
+    run_javascript_test "<html><head></head></html>", "users/index"
   end
 end

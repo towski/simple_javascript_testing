@@ -2,3 +2,6 @@ npm-debug.log
 log
 *.swp
 *.gem
+node_modules
+mkmf.log
+test/html/*

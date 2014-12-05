@@ -1,13 +1,10 @@
 {
   "name": "simple_javascript_testing",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "simple javascript testing for rails",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies" : {
-      "phantomjs": "latest"
   },
   "repository": {
     "type": "git",

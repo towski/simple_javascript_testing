@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'simple_javascript_testing'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2014-10-31'
   s.summary     = "Simple Javascript Testing"
   s.description = "simple javascript testing for rails with phantomjs"
